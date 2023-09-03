@@ -1,0 +1,22 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu_item_link {
+  font-size: 1.25rem;
+}
+
+.menu_item_link:hover {
+  color: #22ff00;
+}

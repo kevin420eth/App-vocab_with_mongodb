@@ -7,6 +7,7 @@ export async function POST(request) {
     try {
         const req = await request.json()
         const vocab = req.vocabulary
+        console.log(vocab)
         await vocabModel.create({
             vocabulary: vocab
         })
