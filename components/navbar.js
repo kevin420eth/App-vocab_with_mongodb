@@ -5,7 +5,7 @@ const Navbar = () => {
         <nav className="navbar">
             <ul className='navbar_menu'>
                 <li className='menu_item'>
-                    <a className='menu_item_link' href="/add">Add</a>
+                    <a className='menu_item_link' href="/">Add</a>
                 </li>
                 <li className='menu_item'>
                     <a className='menu_item_link' href="/mod">Mod</a>
