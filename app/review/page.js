@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <main className='main_section'>
       <div className='vocab_container'>
-        {vocab}
+        {vocab.toLowerCase()}
       </div>
       <button className='submit_button' onClick={start}>
         Start

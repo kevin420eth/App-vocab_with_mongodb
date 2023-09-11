@@ -8,10 +8,10 @@ const Navbar = () => {
                     <a className='menu_item_link' href="/">Add</a>
                 </li>
                 <li className='menu_item'>
-                    <a className='menu_item_link' href="/mod">Mod</a>
+                    <a className='menu_item_link' href="/review">Review</a>
                 </li>
                 <li className='menu_item'>
-                    <a className='menu_item_link' href="/review">Review</a>
+                    <a className='menu_item_link' href="/search">Search</a>
                 </li>
             </ul>
         </nav>
