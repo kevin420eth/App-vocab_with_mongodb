@@ -1,0 +1,18 @@
+{
+    "word": "apple",
+    "meanings": [
+      {
+        "part_of_speech": "noun",
+        "meaning": "A round or oval fruit with red, yellow, or green skin and crisp white flesh, often eaten fresh or used in various culinary dishes and beverages.",
+        "example":
+          "She picked a ripe apple from the tree."
+      },
+      {
+        "part_of_speech": "verb",
+        "meaning": "To throw or propel something in an arc, typically referring to a projectile or object in a game or sport.",
+        "example": 
+          "He apple'd the basketball into the hoop from half-court."
+      }
+    ]
+  }
+  

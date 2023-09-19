@@ -1,21 +1,22 @@
 'use client'
-import React, { useState } from 'react'
-import './page.css'
+import { useState } from 'react'
 import axios from 'axios'
+import './page.css'
 
 export default function Home() {
   const [vocab, setVocab] = useState('')
 
   async function search() {
-    console.log(vocab)
 
     const vocabData = { vocabulary: vocab }
 
     try {
       const response = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${vocab}`)
       const vocabObject = response.data[0]
-      word = vocabObject.word
-      console.log(word)
+      const word = vocabObject.word
+      const partofspeech = vocabObject.meanings[0].partOfSpeech
+      const definition = vocabObject.meanings[0].definitions[0].definition
+      console.log(partofspeech)
       setVocab("")
     } catch (err) {
       console.log(err.message)
