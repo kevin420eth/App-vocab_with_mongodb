@@ -5,13 +5,15 @@ import axios from 'axios'
 
 export default function Home() {
   const [vocab, setVocab] = useState('Random Word Review')
+  const [buttonText, setButtonText] = useState('Start')
 
   async function start() {
     try {
       const response = await axios.get("/api/user/get")
       setVocab(response.data.vocab)
+      setButtonText('Next')
       console.log(response.data.message)
-    }catch(err){
+    } catch (err) {
       console.log(err.message)
     }
 
@@ -23,7 +25,7 @@ export default function Home() {
         {vocab.toLowerCase()}
       </div>
       <button className='submit_button' onClick={start}>
-        Start
+        {buttonText}
       </button>
     </main>
   )

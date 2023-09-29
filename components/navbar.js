@@ -13,6 +13,9 @@ const Navbar = () => {
                 <li className='menu_item'>
                     <a className='menu_item_link' href="/search">Search</a>
                 </li>
+                <li className='menu_item'>
+                    <a className='menu_item_link' href="/dashboard">Dashboard</a>
+                </li>
             </ul>
         </nav>
     )

@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { useState } from 'react'
 import axios from 'axios'
 import './page.css'
@@ -42,7 +43,7 @@ export default function Home() {
         required
       />
       <button className='submit_button' onClick={search}>
-        Search
+        <Link href={`/search/${vocab}`}>Search</Link>
       </button>
     </main>
   )

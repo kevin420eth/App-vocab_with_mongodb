@@ -1,0 +1,20 @@
+.main_section {
+  border:2px solid white;
+  height: 100vh;
+}
+
+.side_navbar {
+  border: 2px solid blue;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  padding-top: 50px;
+}
+
+.menu_list {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding:0 0 0 2rem
+}
