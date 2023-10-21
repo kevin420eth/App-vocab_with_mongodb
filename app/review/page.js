@@ -12,6 +12,7 @@ export default function Home() {
     try {
       const response = await axios.get("/api/user/get")
       setVocab(response.data.vocab)
+      console.log(response.data.vocab)
       setButtonText('Next')
       console.log(response.data.message)
     } catch (err) {
